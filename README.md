@@ -38,7 +38,7 @@ Basic functions of a music app:
 
 ## How does the application work?
 
-![Design of my Music application](E:\codes\Banana-Android-Development\音乐播放器.png)
+![Design of my Music application](\音乐播放器.png)
 
 Click [here][https://www.processon.com/view/link/5f957b8407912906db3e453a] just in case the picture does not show up.
 
