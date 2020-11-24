@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+            android:id="@+id/destoryPlayStatusActivity"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+            android:src="@drawable/back"/>
+
+    <SeekBar
+        android:id="@+id/volume_seekbar"
+        android:layout_width="380dp"
+        android:layout_height="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:thumb="@drawable/like"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+        <TextView
+            android:id="@+id/playMusicStatusTitle"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/destoryPlayStatusActivity"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/playMusicStatusArtist"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/playMusicStatusTitle"
+            android:layout_alignLeft="@id/playMusicStatusTitle"
+            android:textSize="15sp" />
+
+
+    <ImageView
+        android:id="@+id/music_thumb_big"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/volume_seekbar"
+        android:src="@drawable/record" />
+
+    <SeekBar
+        android:id="@+id/music_seekbar"
+        android:layout_width="350dp"
+        android:layout_height="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/music_thumb_big"
+        android:thumb="@drawable/seekbar_selector"
+        style="@android:style/Widget.ProgressBar.Horizontal" />
+
+    <TextView
+        android:id="@+id/music_duration_current"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@id/music_seekbar"
+        android:layout_alignBottom="@id/music_seekbar"
+        android:textSize="14sp"
+        android:layout_marginRight="5dp"
+        android:textAlignment="gravity"
+        />
+
+    <TextView
+        android:id="@+id/music_duration_end"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_toRightOf="@id/music_seekbar"
+        android:layout_alignBottom="@id/music_seekbar"
+        android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonPlayModes"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/buttonPlayPrevious"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/playcycle"
+        android:layout_marginRight="20dp"
+        />
+
+
+    <ImageButton
+        android:id="@+id/buttonPlayPrevious"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/buttonPlayMusic"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:src="@drawable/gostart"
+        android:layout_marginRight="8dp"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonPlayMusic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector"
+        />
+
+    <ImageButton
+        android:id="@+id/buttonPlayNext"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_toRightOf="@id/buttonPlayMusic"
+        android:src="@drawable/goend"
+        android:layout_marginLeft="8dp"
+        />
+
+
+
+
+
+</RelativeLayout>

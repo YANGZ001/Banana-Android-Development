@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/notification_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="4dp"
+            android:baselineAlignBottom="true"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/notification_title"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:singleLine="true"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/notification_playprev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/gostart"
+            />
+
+        <ImageButton
+            android:id="@+id/notification_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/selector"
+            />
+
+        <ImageButton
+            android:id="@+id/notification_playnext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/goend"
+            />
+
+        <ImageButton
+            android:id="@+id/notification_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/closeone"
+            />
+
+</LinearLayout>

@@ -1,33 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/container"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="?attr/actionBarSize">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
-        android:background="?android:attr/windowBackground"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" />
-
-    <fragment
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:layout_constraintBottom_toTopOf="@id/nav_view"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/mobile_navigation" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/music_background" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ListView
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="180dp"
+        android:layout_height="430dp"/>
+
+    <LinearLayout
+        android:id="@+id/buttomPlayStatus"
+        android:layout_below="@id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:clickable="true">
+
+        <ImageView
+            android:id="@+id/music_thumb_bottom"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:padding="2dp"
+            android:layout_margin="5dp"
+            android:paddingLeft="4dp"
+            android:baselineAlignBottom="true"
+            android:background="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/music_title_bottom"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:singleLine="true"
+            android:textSize="18sp"/>
+
+        <ImageButton
+            android:id="@+id/buttonPlayPrevious"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/gostart"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonPlayMusic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:paddingLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/selector"
+            />
+
+        <ImageButton
+            android:id="@+id/buttonPlayNext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/goend"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
